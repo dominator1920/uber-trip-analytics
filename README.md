@@ -51,6 +51,22 @@ This project analyzes Uber trip data to extract insights on trip duration, speed
 - **Mean Absolute Error (MAE):** (Add value here)
 - **R² Score:** (Add value here)
 
+
+## Model Performance
+
+You can calculate model performance using the following code:
+
+```python
+from sklearn.metrics import mean_absolute_error, r2_score
+
+# Assuming y_test and y_pred are your actual and predicted values:
+mae = mean_absolute_error(y_test, y_pred)
+r2 = r2_score(y_test, y_pred)
+
+print(f"Mean Absolute Error (MAE): {mae}")
+print(f"R² Score: {r2}")
+
+
 ## Contributing
 
 Feel free to fork this repository and submit pull requests with improvements or additional features.
